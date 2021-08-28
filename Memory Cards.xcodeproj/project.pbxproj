@@ -20,6 +20,7 @@
 		D058C6D626D8EDA200E4C15F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D058C6D926D8EDA200E4C15F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D058C6DB26D8EDA200E4C15F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D058C6E126D8F83600E4C15F /* TestingCode.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = TestingCode.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +53,7 @@
 		D058C6D126D8ED9F00E4C15F /* Memory Cards */ = {
 			isa = PBXGroup;
 			children = (
+				D058C6E126D8F83600E4C15F /* TestingCode.playground */,
 				D058C6D226D8ED9F00E4C15F /* Memory_CardsApp.swift */,
 				D058C6D426D8ED9F00E4C15F /* ContentView.swift */,
 				D058C6D626D8EDA200E4C15F /* Assets.xcassets */,
