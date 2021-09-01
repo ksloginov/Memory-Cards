@@ -12,15 +12,13 @@ struct ContentView: View {
         ZStack {
             RoundedRectangle(cornerRadius: 20)
                 .stroke(lineWidth: 3.0)
+                .padding(.horizontal)
+                .foregroundColor(.red)
             Text("Hello, Kristiania 2021/2022!")
+                .foregroundColor(.orange)
+                .padding()
         }
         .foregroundColor(.red)
         .padding()
-    }
-}
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
     }
 }
