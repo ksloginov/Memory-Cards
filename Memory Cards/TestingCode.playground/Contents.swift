@@ -114,3 +114,51 @@ struct CircleFigure: View {
 
 
 PlaygroundPage.current.setLiveView(CircleFigure())
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//
+///// GENERICS - don't care type - "type parameters"(C)
+//// Array's declaration looks something like this:
+//
+//struct Array<Element> {
+//    ....
+//    func append(_ element: Element) { ... }
+//}
+//
+//// Array's implementation of append knows *nothing* about the argument.
+//// Element - is just a placeholder (not a known class or struct)
+//
+//var a = Array<Int>()
+//a.append(5)
+//a.append(7)
+//
+//// When someone uses Array, that's when Element get determined (to Int in this case)
+//
+//// Also the same struct or class might have multiple generic types defined:
+//// struct Card<Content, Regulation> { .... }
+//

@@ -11,6 +11,7 @@
 		D058C6D526D8ED9F00E4C15F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D058C6D426D8ED9F00E4C15F /* ContentView.swift */; };
 		D058C6D726D8EDA200E4C15F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D058C6D626D8EDA200E4C15F /* Assets.xcassets */; };
 		D058C6DA26D8EDA200E4C15F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D058C6D926D8EDA200E4C15F /* Preview Assets.xcassets */; };
+		D0AF5CCD26E0C4F80005FECE /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AF5CCC26E0C4F80005FECE /* CardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		D058C6D926D8EDA200E4C15F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D058C6DB26D8EDA200E4C15F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D058C6E126D8F83600E4C15F /* TestingCode.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = TestingCode.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		D0AF5CCC26E0C4F80005FECE /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,9 +55,9 @@
 		D058C6D126D8ED9F00E4C15F /* Memory Cards */ = {
 			isa = PBXGroup;
 			children = (
+				D0AF5CCE26E0C50E0005FECE /* Views */,
 				D058C6E126D8F83600E4C15F /* TestingCode.playground */,
 				D058C6D226D8ED9F00E4C15F /* Memory_CardsApp.swift */,
-				D058C6D426D8ED9F00E4C15F /* ContentView.swift */,
 				D058C6D626D8EDA200E4C15F /* Assets.xcassets */,
 				D058C6DB26D8EDA200E4C15F /* Info.plist */,
 				D058C6D826D8EDA200E4C15F /* Preview Content */,
@@ -69,6 +71,15 @@
 				D058C6D926D8EDA200E4C15F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D0AF5CCE26E0C50E0005FECE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D058C6D426D8ED9F00E4C15F /* ContentView.swift */,
+				D0AF5CCC26E0C4F80005FECE /* CardView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +152,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D058C6D526D8ED9F00E4C15F /* ContentView.swift in Sources */,
+				D0AF5CCD26E0C4F80005FECE /* CardView.swift in Sources */,
 				D058C6D326D8ED9F00E4C15F /* Memory_CardsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
