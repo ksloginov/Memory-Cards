@@ -19,18 +19,14 @@ struct CardView: View {
             let shape = RoundedRectangle(cornerRadius: Constants.cardCornerRadius)
             if isFlipped {
                 shape
-                    .padding(.horizontal)
                     .foregroundColor(.white)
                 shape
                     .stroke(lineWidth: Constants.strokeLineWidth)
-                    .padding(.horizontal)
                     .foregroundColor(.red)
                 Text(content)
                     .font(.largeTitle)
-                    .padding()
             } else {
                 shape
-                    .padding(.horizontal)
                     .foregroundColor(.red)
             }
         }

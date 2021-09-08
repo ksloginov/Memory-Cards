@@ -35,5 +35,6 @@ struct ButtonsPanel: View {
             })
         }
         .foregroundColor(Color.red)
+        .padding()
     }
 }
