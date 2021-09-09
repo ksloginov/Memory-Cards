@@ -9,42 +9,28 @@ import SwiftUI
 
 struct CardView: View {
     
-    @State var isFlipped: Bool = false
-    
-    let content: String
+    let card: Card
     
     var body: some View {
-        
         ZStack {
             let shape = RoundedRectangle(cornerRadius: Constants.cardCornerRadius)
-            if isFlipped {
+            if card.isFaceUp {
                 shape
                     .foregroundColor(.white)
                 shape
                     .stroke(lineWidth: Constants.strokeLineWidth)
                     .foregroundColor(.red)
-                Text(content)
+                Text(card.content)
                     .font(.largeTitle)
             } else {
                 shape
                     .foregroundColor(.red)
             }
         }
-        .onTapGesture {
-            isFlipped = !isFlipped
-        }
     }
     
     struct Constants {
         static let cardCornerRadius: CGFloat = 20.0
         static let strokeLineWidth: CGFloat = 3.0
-    }
-}
-
-struct CardView_Previews: PreviewProvider {
-    static var previews: some View {
-        CardView(content: "❤️")
-        CardView(content: "❤️")
-            .preferredColorScheme(.dark)
     }
 }

@@ -20,25 +20,23 @@ import SwiftUI
 
 struct ContentView: View {
     
-    var emojies = ["❤️", "👨🏻‍🍳", "💩", "😡", "😧", "🤖", "🎩", "🐯", "🦺", "💍", "🎒", "🐎", "🐩", "🦧", "🐳", "🐕", "🦄", "🦀", "🐿", "🦔", "🦦", "🦢", "🦜"]
-    
-    @State var numerOfCards: Int = 15
+    @ObservedObject var viewModel = EmojiGameViewModel()
     
     var body: some View {
         VStack {
             ScrollView {
                 LazyVGrid(columns: [GridItem(.adaptive(minimum: 75))]) {
-                    ForEach(emojies[0..<numerOfCards], id: \.self) { emoji in
-                        CardView(content: emoji)
+                    ForEach(viewModel.cards) { card in
+                        CardView(card: card)
                             .aspectRatio(2/3, contentMode: .fit)
+                            .onTapGesture {
+                                viewModel.intentChooseCard(card: card)
+                            }
                     }
                 }
             }
             .foregroundColor(.red)
             Spacer()
-            
-            ButtonsPanel(emojies: emojies,
-                         numerOfCards: $numerOfCards)
         }
         .padding()
     }

@@ -11,7 +11,8 @@
 		D058C6D526D8ED9F00E4C15F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D058C6D426D8ED9F00E4C15F /* ContentView.swift */; };
 		D058C6D726D8EDA200E4C15F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D058C6D626D8EDA200E4C15F /* Assets.xcassets */; };
 		D058C6DA26D8EDA200E4C15F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D058C6D926D8EDA200E4C15F /* Preview Assets.xcassets */; };
-		D063643A26E20E5800238D78 /* ButtonPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D063643926E20E5800238D78 /* ButtonPanel.swift */; };
+		D0A64DDD26E9FA3F00C92AE5 /* MemoryGameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A64DDC26E9FA3F00C92AE5 /* MemoryGameModel.swift */; };
+		D0A64DDF26E9FB6C00C92AE5 /* EmojiGameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A64DDE26E9FB6C00C92AE5 /* EmojiGameViewModel.swift */; };
 		D0AF5CCD26E0C4F80005FECE /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AF5CCC26E0C4F80005FECE /* CardView.swift */; };
 /* End PBXBuildFile section */
 
@@ -23,7 +24,8 @@
 		D058C6D926D8EDA200E4C15F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D058C6DB26D8EDA200E4C15F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D058C6E126D8F83600E4C15F /* TestingCode.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = TestingCode.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
-		D063643926E20E5800238D78 /* ButtonPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonPanel.swift; sourceTree = "<group>"; };
+		D0A64DDC26E9FA3F00C92AE5 /* MemoryGameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryGameModel.swift; sourceTree = "<group>"; };
+		D0A64DDE26E9FB6C00C92AE5 /* EmojiGameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiGameViewModel.swift; sourceTree = "<group>"; };
 		D0AF5CCC26E0C4F80005FECE /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -57,7 +59,9 @@
 		D058C6D126D8ED9F00E4C15F /* Memory Cards */ = {
 			isa = PBXGroup;
 			children = (
-				D0AF5CCE26E0C50E0005FECE /* Views */,
+				D0A64DDB26E9F9D100C92AE5 /* Model */,
+				D0A64DDA26E9F9CB00C92AE5 /* ViewModel */,
+				D0AF5CCE26E0C50E0005FECE /* View */,
 				D058C6E126D8F83600E4C15F /* TestingCode.playground */,
 				D058C6D226D8ED9F00E4C15F /* Memory_CardsApp.swift */,
 				D058C6D626D8EDA200E4C15F /* Assets.xcassets */,
@@ -75,14 +79,29 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		D0AF5CCE26E0C50E0005FECE /* Views */ = {
+		D0A64DDA26E9F9CB00C92AE5 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D0A64DDE26E9FB6C00C92AE5 /* EmojiGameViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D0A64DDB26E9F9D100C92AE5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D0A64DDC26E9FA3F00C92AE5 /* MemoryGameModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D0AF5CCE26E0C50E0005FECE /* View */ = {
 			isa = PBXGroup;
 			children = (
 				D058C6D426D8ED9F00E4C15F /* ContentView.swift */,
 				D0AF5CCC26E0C4F80005FECE /* CardView.swift */,
-				D063643926E20E5800238D78 /* ButtonPanel.swift */,
 			);
-			path = Views;
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,7 +173,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D063643A26E20E5800238D78 /* ButtonPanel.swift in Sources */,
+				D0A64DDD26E9FA3F00C92AE5 /* MemoryGameModel.swift in Sources */,
+				D0A64DDF26E9FB6C00C92AE5 /* EmojiGameViewModel.swift in Sources */,
 				D058C6D526D8ED9F00E4C15F /* ContentView.swift in Sources */,
 				D0AF5CCD26E0C4F80005FECE /* CardView.swift in Sources */,
 				D058C6D326D8ED9F00E4C15F /* Memory_CardsApp.swift in Sources */,
