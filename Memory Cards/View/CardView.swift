@@ -7,30 +7,35 @@
 
 import SwiftUI
 
-struct CardView: View {
+struct CardView<Element: CustomStringConvertible>: View where Element: Hashable {
     
-    let card: Card
+    let card: MemoryGameModel<Element>.Card
     
     var body: some View {
-        ZStack {
-            let shape = RoundedRectangle(cornerRadius: Constants.cardCornerRadius)
-            if card.isFaceUp {
-                shape
-                    .foregroundColor(.white)
-                shape
-                    .stroke(lineWidth: Constants.strokeLineWidth)
-                    .foregroundColor(.red)
-                Text(card.content)
-                    .font(.largeTitle)
-            } else {
-                shape
-                    .foregroundColor(.red)
+        GeometryReader { proxy in
+            ZStack {
+                
+                let shape = RoundedRectangle(cornerRadius: Constants.cardCornerRadius)
+                if card.isFaceUp {
+                    shape
+                        .foregroundColor(.white)
+                    shape
+                        .stroke(lineWidth: Constants.strokeLineWidth)
+                        .foregroundColor(.red)
+                    Text(card.content.description)
+                        .font(.system(size: min(proxy.size.height, proxy.size.width) * 0.7))
+                } else if card.isMatched {
+                    Color.clear
+                } else {
+                    shape
+                        .foregroundColor(.red)
+                }
             }
         }
     }
-    
-    struct Constants {
-        static let cardCornerRadius: CGFloat = 20.0
-        static let strokeLineWidth: CGFloat = 3.0
-    }
+}
+
+fileprivate struct Constants {
+    static let cardCornerRadius: CGFloat = 20.0
+    static let strokeLineWidth: CGFloat = 3.0
 }

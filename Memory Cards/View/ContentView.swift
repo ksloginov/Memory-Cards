@@ -20,7 +20,7 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @ObservedObject var viewModel = EmojiGameViewModel()
+    @ObservedObject var viewModel = DigitsGameViewModel()
     
     var body: some View {
         VStack {

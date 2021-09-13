@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D053227E26EF586000B06FE4 /* DigitsGameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D053227D26EF586000B06FE4 /* DigitsGameViewModel.swift */; };
 		D058C6D326D8ED9F00E4C15F /* Memory_CardsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D058C6D226D8ED9F00E4C15F /* Memory_CardsApp.swift */; };
 		D058C6D526D8ED9F00E4C15F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D058C6D426D8ED9F00E4C15F /* ContentView.swift */; };
 		D058C6D726D8EDA200E4C15F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D058C6D626D8EDA200E4C15F /* Assets.xcassets */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D053227D26EF586000B06FE4 /* DigitsGameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigitsGameViewModel.swift; sourceTree = "<group>"; };
 		D058C6CF26D8ED9F00E4C15F /* Memory Cards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Memory Cards.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D058C6D226D8ED9F00E4C15F /* Memory_CardsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memory_CardsApp.swift; sourceTree = "<group>"; };
 		D058C6D426D8ED9F00E4C15F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				D0A64DDE26E9FB6C00C92AE5 /* EmojiGameViewModel.swift */,
+				D053227D26EF586000B06FE4 /* DigitsGameViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -177,6 +180,7 @@
 				D0A64DDF26E9FB6C00C92AE5 /* EmojiGameViewModel.swift in Sources */,
 				D058C6D526D8ED9F00E4C15F /* ContentView.swift in Sources */,
 				D0AF5CCD26E0C4F80005FECE /* CardView.swift in Sources */,
+				D053227E26EF586000B06FE4 /* DigitsGameViewModel.swift in Sources */,
 				D058C6D326D8ED9F00E4C15F /* Memory_CardsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
