@@ -7,21 +7,19 @@
 
 import Foundation
 
-class EmojiGameViewModel: ObservableObject {
+class EmojiMemoryGameViewModel: ObservableObject {
     
-    static var emojies = ["❤️", "👨🏻‍🍳", "💩", "😡", "😧", "🤖", "🎩", "🐯", "🦺", "💍", "🎒", "🐎", "🐩", "🦧", "🐳", "🐕", "🦄", "🦀", "🐿", "🦔", "🦦", "🦢", "🦜"]
+    private static let emojies = ["❤️", "👨🏻‍🍳", "💩", "😡", "😧", "🤖", "🎩", "🐯", "🦺", "💍", "🎒", "🐎", "🐩", "🦧", "🐳", "🐕", "🦄", "🦀", "🐿", "🦔", "🦦", "🦢", "🦜"]
     
+    @Published private var model: MemoryGameModel<String> = MemoryGameModel(numberOfCards: 4, elements: emojies)
     
-    @Published private var model: MemoryGameModel = MemoryGameModel(numberOfCards: 4, elements: emojies)
-    
-    var cards: [MemoryGameModel<String>.Card] {
+    var cards: Array<MemoryGameModel<String>.Card> {
         return model.cards
     }
     
+    // MARK: - Intent(s)
     
-    // MARK: Intents
-    func intentChooseCard(card: MemoryGameModel<String>.Card) {
-        model.chooseCard(card: card)
+    func choose(_ card: MemoryGameModel<String>.Card) {
+        model.choose(card: card)
     }
-    
 }
