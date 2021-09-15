@@ -16,6 +16,9 @@
 		D0AF5CCD26E0C4F80005FECE /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AF5CCC26E0C4F80005FECE /* CardView.swift */; };
 		D0C4A63C26F274430060A39A /* AspectVGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C4A63B26F274430060A39A /* AspectVGrid.swift */; };
 		D0C4A63F26F278E30060A39A /* Cardify.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C4A63E26F278E30060A39A /* Cardify.swift */; };
+		D0C4A64126F2935B0060A39A /* GameListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C4A64026F2935B0060A39A /* GameListView.swift */; };
+		D0C4A64326F295080060A39A /* FootballGameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C4A64226F295080060A39A /* FootballGameViewModel.swift */; };
+		D0C4A64526F2952D0060A39A /* FootballMemoryGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C4A64426F2952D0060A39A /* FootballMemoryGameView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +34,9 @@
 		D0AF5CCC26E0C4F80005FECE /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		D0C4A63B26F274430060A39A /* AspectVGrid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AspectVGrid.swift; sourceTree = "<group>"; };
 		D0C4A63E26F278E30060A39A /* Cardify.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cardify.swift; sourceTree = "<group>"; };
+		D0C4A64026F2935B0060A39A /* GameListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameListView.swift; sourceTree = "<group>"; };
+		D0C4A64226F295080060A39A /* FootballGameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootballGameViewModel.swift; sourceTree = "<group>"; };
+		D0C4A64426F2952D0060A39A /* FootballMemoryGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootballMemoryGameView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				D0A64DDE26E9FB6C00C92AE5 /* EmojiGameViewModel.swift */,
+				D0C4A64226F295080060A39A /* FootballGameViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -106,6 +113,8 @@
 				D0C4A63B26F274430060A39A /* AspectVGrid.swift */,
 				D058C6D426D8ED9F00E4C15F /* EmojiMemoryGameView.swift */,
 				D0AF5CCC26E0C4F80005FECE /* CardView.swift */,
+				D0C4A64026F2935B0060A39A /* GameListView.swift */,
+				D0C4A64426F2952D0060A39A /* FootballMemoryGameView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -193,7 +202,10 @@
 				D0C4A63C26F274430060A39A /* AspectVGrid.swift in Sources */,
 				D058C6D526D8ED9F00E4C15F /* EmojiMemoryGameView.swift in Sources */,
 				D0AF5CCD26E0C4F80005FECE /* CardView.swift in Sources */,
+				D0C4A64526F2952D0060A39A /* FootballMemoryGameView.swift in Sources */,
+				D0C4A64126F2935B0060A39A /* GameListView.swift in Sources */,
 				D058C6D326D8ED9F00E4C15F /* Memory_CardsApp.swift in Sources */,
+				D0C4A64326F295080060A39A /* FootballGameViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

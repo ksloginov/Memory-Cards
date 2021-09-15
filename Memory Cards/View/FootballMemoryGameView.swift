@@ -1,28 +1,14 @@
 //
-//  EmojiMemoryGameView.swift
+//  FootballMemoryGameView.swift
 //  Memory Cards
 //
-//  Created by Konstantin Loginov on 27.08.2021.
+//  Created by Konstantin Loginov on 15.09.2021.
 //
 
 import SwiftUI
-//
-//struct Card: Identifiable {
-//
-//    init(content: String) {
-//        self.content = content
-//        self.id = content.hash
-//    }
-//
-//    let id: Int
-//    let content: String
-//}
 
-import SwiftUI
-
-struct EmojiMemoryGameView: View {
-    
-    @ObservedObject var viewModel: EmojiMemoryGameViewModel
+struct FootballMemoryGameView: View {
+    @ObservedObject var viewModel: FootballGameViewModel
     
     var body: some View {
         VStack {
@@ -35,13 +21,13 @@ struct EmojiMemoryGameView: View {
         .padding(.horizontal)
         .navigationTitle("Emojis")
         .navigationBarItems(trailing:
-            Button(action: {
-                withAnimation {
-                    viewModel.restart()
-                }
-            }, label: {
-                Text("Restart")
-            })
+                                Button(action: {
+                                    withAnimation {
+                                        viewModel.restart()
+                                    }
+                                }, label: {
+                                    Text("Restart")
+                                })
         )
     }
     
@@ -57,32 +43,10 @@ struct EmojiMemoryGameView: View {
                     withAnimation {
                         viewModel.choose(card)
                     }
-
+                    
                 }
         }
     }
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-struct EmojiMemoryGameView_Previews: PreviewProvider {
-    static var previews: some View {
-        let viewModel = EmojiMemoryGameViewModel()
-        EmojiMemoryGameView(viewModel: viewModel)
-            .preferredColorScheme(.dark)
-        EmojiMemoryGameView(viewModel: viewModel)
-            .preferredColorScheme(.light)
-    }
-}
