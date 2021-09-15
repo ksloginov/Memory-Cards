@@ -31,7 +31,18 @@ struct EmojiMemoryGameView: View {
             })
             .foregroundColor(.red)
         }
+        .padding(.top, 15)
         .padding(.horizontal)
+        .navigationTitle("Emojis")
+        .navigationBarItems(trailing:
+            Button(action: {
+                withAnimation {
+                    viewModel.restart()
+                }
+            }, label: {
+                Text("Restart")
+            })
+        )
     }
     
     @ViewBuilder // <-- pay attention to this declaration. It explains to compile that this function is also a ViewBuilder

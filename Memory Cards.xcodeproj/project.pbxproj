@@ -15,6 +15,7 @@
 		D0A64DDF26E9FB6C00C92AE5 /* EmojiGameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A64DDE26E9FB6C00C92AE5 /* EmojiGameViewModel.swift */; };
 		D0AF5CCD26E0C4F80005FECE /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AF5CCC26E0C4F80005FECE /* CardView.swift */; };
 		D0C4A63C26F274430060A39A /* AspectVGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C4A63B26F274430060A39A /* AspectVGrid.swift */; };
+		D0C4A63F26F278E30060A39A /* Cardify.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C4A63E26F278E30060A39A /* Cardify.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		D0A64DDE26E9FB6C00C92AE5 /* EmojiGameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiGameViewModel.swift; sourceTree = "<group>"; };
 		D0AF5CCC26E0C4F80005FECE /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		D0C4A63B26F274430060A39A /* AspectVGrid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AspectVGrid.swift; sourceTree = "<group>"; };
+		D0C4A63E26F278E30060A39A /* Cardify.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cardify.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,11 +102,20 @@
 		D0AF5CCE26E0C50E0005FECE /* View */ = {
 			isa = PBXGroup;
 			children = (
+				D0C4A63D26F278D70060A39A /* Modifiers */,
 				D0C4A63B26F274430060A39A /* AspectVGrid.swift */,
 				D058C6D426D8ED9F00E4C15F /* EmojiMemoryGameView.swift */,
 				D0AF5CCC26E0C4F80005FECE /* CardView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		D0C4A63D26F278D70060A39A /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				D0C4A63E26F278E30060A39A /* Cardify.swift */,
+			);
+			path = Modifiers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,6 +188,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0A64DDD26E9FA3F00C92AE5 /* MemoryGameModel.swift in Sources */,
+				D0C4A63F26F278E30060A39A /* Cardify.swift in Sources */,
 				D0A64DDF26E9FB6C00C92AE5 /* EmojiGameViewModel.swift in Sources */,
 				D0C4A63C26F274430060A39A /* AspectVGrid.swift in Sources */,
 				D058C6D526D8ED9F00E4C15F /* EmojiMemoryGameView.swift in Sources */,

@@ -13,7 +13,9 @@ struct Memory_CardsApp: App {
     
     var body: some Scene {
         WindowGroup {
-            EmojiMemoryGameView(viewModel: emojiGameViewModel)
+            NavigationView {
+                EmojiMemoryGameView(viewModel: emojiGameViewModel)
+            }
         }
     }
 }

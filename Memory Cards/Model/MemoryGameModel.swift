@@ -39,6 +39,17 @@ struct MemoryGameModel<CardContent> where CardContent: Equatable {
             cards.append(Card(id: item.offset * 2, content: item.element))
             cards.append(Card(id: item.offset * 2 + 1, content: item.element))
         }
+        
+        restart()
+    }
+    
+    mutating func restart() {
+        for i in cards.indices {
+            cards[i].isMatched = false
+            cards[i].isFaceUp = false
+        }
+
+        cards.shuffle()
     }
     
     struct Card: Identifiable {
