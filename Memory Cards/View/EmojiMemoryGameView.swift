@@ -54,7 +54,10 @@ struct EmojiMemoryGameView: View {
                 .padding(4.0)
                 .aspectRatio(2/3, contentMode: .fit)
                 .onTapGesture {
-                    viewModel.choose(card)
+                    withAnimation(Animation.linear(duration: 3.0)) {
+                        viewModel.choose(card)
+                    }
+
                 }
         }
     }
