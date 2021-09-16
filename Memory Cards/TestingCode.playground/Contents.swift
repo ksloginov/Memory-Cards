@@ -210,8 +210,43 @@ PlaygroundPage.current.setLiveView(CircleFigure())
 
 
 
-extension SomeType: SomeProtocol, AnotherProtocol {
-    // new functionality to add to SomeType goes here
-    ...
-    // implementation of protocol requirements goes here
-}
+//extension SomeType: SomeProtocol, AnotherProtocol {
+//    // new functionality to add to SomeType goes here
+//    ...
+//    // implementation of protocol requirements goes here
+//}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//struct Cardify: ViewModifier {
+//    var isFaceUp: Bool
+//    func body(content: Content) -> some View {
+//        ZStack {
+//            if isFaceUp {
+//                RoundedRectangle(cornerRadius: 10.0).fill(Color.white)
+//                RoundedRectangle(cornerRadius: 10.0).stroke()
+//                content
+//            } else {
+//                RoundedRectangle(cornerRadius: 10.0)
+//            }
+//        }
+//    }
+//}
+

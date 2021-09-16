@@ -32,6 +32,14 @@ struct EmojiMemoryGameView: View {
             .foregroundColor(.red)
         }
         .padding(.horizontal)
+        .navigationTitle("Emojis")
+        .navigationBarItems(trailing: Button(action: {
+            withAnimation {
+                viewModel.restart()
+            }
+        }, label: {
+            Text("Restart")
+        }))
     }
     
     @ViewBuilder // <-- pay attention to this declaration. It explains to compile that this function is also a ViewBuilder
@@ -39,11 +47,13 @@ struct EmojiMemoryGameView: View {
         if card.isMatched && !card.isFaceUp {
             Rectangle().opacity(0.0)
         } else {
-            CardView(card: card)
+            CardView(card: card, content: Text(card.content))
                 .padding(4.0)
                 .aspectRatio(2/3, contentMode: .fit)
                 .onTapGesture {
-                    viewModel.choose(card)
+                    withAnimation(Animation.linear(duration: 1.0)) {
+                        viewModel.choose(card)
+                    }
                 }
         }
     }

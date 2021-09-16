@@ -9,11 +9,12 @@ import SwiftUI
 
 @main
 struct Memory_CardsApp: App {
-    private let emojiGameViewModel = EmojiMemoryGameViewModel()
     
     var body: some Scene {
         WindowGroup {
-            EmojiMemoryGameView(viewModel: emojiGameViewModel)
+            NavigationView {
+                GameListView()
+            }
         }
     }
 }

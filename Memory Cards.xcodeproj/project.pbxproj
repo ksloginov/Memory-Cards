@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,12 @@
 		D0A64DDF26E9FB6C00C92AE5 /* EmojiGameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A64DDE26E9FB6C00C92AE5 /* EmojiGameViewModel.swift */; };
 		D0AF5CCD26E0C4F80005FECE /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AF5CCC26E0C4F80005FECE /* CardView.swift */; };
 		D0C4A63C26F274430060A39A /* AspectVGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C4A63B26F274430060A39A /* AspectVGrid.swift */; };
+		D0D6E98E26F325B50001C849 /* CardifyModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D6E98D26F325B50001C849 /* CardifyModifier.swift */; };
+		D0D6E99026F3353A0001C849 /* GameListview.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D6E98F26F3353A0001C849 /* GameListview.swift */; };
+		D0D6E99226F3370F0001C849 /* FootballMemoryGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D6E99126F3370F0001C849 /* FootballMemoryGameView.swift */; };
+		D0D6E99426F337320001C849 /* FootballMemoryGameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D6E99326F337320001C849 /* FootballMemoryGameViewModel.swift */; };
+		D0D6E99726F33C1B0001C849 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = D0D6E99626F33C1B0001C849 /* SDWebImageSwiftUI */; };
+		D0D6E99A26F33E440001C849 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = D0D6E99926F33E440001C849 /* Alamofire */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +35,10 @@
 		D0A64DDE26E9FB6C00C92AE5 /* EmojiGameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiGameViewModel.swift; sourceTree = "<group>"; };
 		D0AF5CCC26E0C4F80005FECE /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		D0C4A63B26F274430060A39A /* AspectVGrid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AspectVGrid.swift; sourceTree = "<group>"; };
+		D0D6E98D26F325B50001C849 /* CardifyModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardifyModifier.swift; sourceTree = "<group>"; };
+		D0D6E98F26F3353A0001C849 /* GameListview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameListview.swift; sourceTree = "<group>"; };
+		D0D6E99126F3370F0001C849 /* FootballMemoryGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootballMemoryGameView.swift; sourceTree = "<group>"; };
+		D0D6E99326F337320001C849 /* FootballMemoryGameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootballMemoryGameViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +46,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0D6E99726F33C1B0001C849 /* SDWebImageSwiftUI in Frameworks */,
+				D0D6E99A26F33E440001C849 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				D0A64DDE26E9FB6C00C92AE5 /* EmojiGameViewModel.swift */,
+				D0D6E99326F337320001C849 /* FootballMemoryGameViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -102,7 +115,10 @@
 			children = (
 				D0C4A63B26F274430060A39A /* AspectVGrid.swift */,
 				D058C6D426D8ED9F00E4C15F /* EmojiMemoryGameView.swift */,
+				D0D6E99126F3370F0001C849 /* FootballMemoryGameView.swift */,
 				D0AF5CCC26E0C4F80005FECE /* CardView.swift */,
+				D0D6E98D26F325B50001C849 /* CardifyModifier.swift */,
+				D0D6E98F26F3353A0001C849 /* GameListview.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -123,6 +139,10 @@
 			dependencies = (
 			);
 			name = "Memory Cards";
+			packageProductDependencies = (
+				D0D6E99626F33C1B0001C849 /* SDWebImageSwiftUI */,
+				D0D6E99926F33E440001C849 /* Alamofire */,
+			);
 			productName = "Memory Cards";
 			productReference = D058C6CF26D8ED9F00E4C15F /* Memory Cards.app */;
 			productType = "com.apple.product-type.application";
@@ -150,6 +170,10 @@
 				Base,
 			);
 			mainGroup = D058C6C626D8ED9F00E4C15F;
+			packageReferences = (
+				D0D6E99526F33C1B0001C849 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+				D0D6E99826F33E440001C849 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = D058C6D026D8ED9F00E4C15F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -176,12 +200,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0D6E99426F337320001C849 /* FootballMemoryGameViewModel.swift in Sources */,
 				D0A64DDD26E9FA3F00C92AE5 /* MemoryGameModel.swift in Sources */,
 				D0A64DDF26E9FB6C00C92AE5 /* EmojiGameViewModel.swift in Sources */,
 				D0C4A63C26F274430060A39A /* AspectVGrid.swift in Sources */,
 				D058C6D526D8ED9F00E4C15F /* EmojiMemoryGameView.swift in Sources */,
 				D0AF5CCD26E0C4F80005FECE /* CardView.swift in Sources */,
 				D058C6D326D8ED9F00E4C15F /* Memory_CardsApp.swift in Sources */,
+				D0D6E99026F3353A0001C849 /* GameListview.swift in Sources */,
+				D0D6E99226F3370F0001C849 /* FootballMemoryGameView.swift in Sources */,
+				D0D6E98E26F325B50001C849 /* CardifyModifier.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,6 +398,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D0D6E99526F33C1B0001C849 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.2;
+			};
+		};
+		D0D6E99826F33E440001C849 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.4.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D0D6E99626F33C1B0001C849 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D0D6E99526F33C1B0001C849 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+		D0D6E99926F33E440001C849 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D0D6E99826F33E440001C849 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D058C6C726D8ED9F00E4C15F /* Project object */;
 }

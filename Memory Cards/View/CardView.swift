@@ -7,39 +7,27 @@
 
 import SwiftUI
 
-struct CardView: View {
+struct CardView<Value: Equatable, Content: View>: View {
     
-    var card: MemoryGameModel<String>.Card
+    var card: MemoryGameModel<Value>.Card
+    var content: Content
     
     var body: some View {
-        GeometryReader { geometry in
+        GeometryReader { proxy in
             ZStack {
-                let shape = RoundedRectangle(cornerRadius: Constants.cornerRadius)
-                if card.isFaceUp {
-                    shape
-                        .fill()
-                        .foregroundColor(.white)
-                    shape
-                        .stroke(lineWidth: Constants.lineWidth)
-                    Text(card.content)
-                        .font(Font.system(size: min(geometry.size.width, geometry.size.height) * Constants.fontScale))
-                } else {
-                    shape
-                        .fill()
-                }
+                content
+                    .rotationEffect(Angle.degrees(card.isMatched ? 360 : 0))
+                    .animation(Animation.easeOut(duration: 2).repeatForever())
             }
+            .cardify(isFaceUp: card.isFaceUp)
         }
     }
     
-    private struct Constants {
-        static let cornerRadius: CGFloat = 10.0
-        static let lineWidth: CGFloat = 3.0
-        static let fontScale: CGFloat = 0.7
+    private func size(_ proxy: GeometryProxy) -> CGFloat {
+        return min(proxy.size.width, proxy.size.height) / (32.0 / Constants.fontScale)
     }
 }
 
-struct CardView_Previews: PreviewProvider {
-    static var previews: some View {
-        CardView(card: MemoryGameModel<String>.Card(id: 42, isFaceUp: true, isMatched: false, content: "🚀"))
-    }
+private struct Constants {
+    static let fontScale: CGFloat = 0.7
 }
