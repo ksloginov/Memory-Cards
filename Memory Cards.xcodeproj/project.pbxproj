@@ -21,6 +21,7 @@
 		D0D6E99426F337320001C849 /* FootballMemoryGameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D6E99326F337320001C849 /* FootballMemoryGameViewModel.swift */; };
 		D0D6E99726F33C1B0001C849 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = D0D6E99626F33C1B0001C849 /* SDWebImageSwiftUI */; };
 		D0D6E99A26F33E440001C849 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = D0D6E99926F33E440001C849 /* Alamofire */; };
+		D0D6E99C26F340DC0001C849 /* Teams.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D6E99B26F340DC0001C849 /* Teams.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		D0D6E98F26F3353A0001C849 /* GameListview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameListview.swift; sourceTree = "<group>"; };
 		D0D6E99126F3370F0001C849 /* FootballMemoryGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootballMemoryGameView.swift; sourceTree = "<group>"; };
 		D0D6E99326F337320001C849 /* FootballMemoryGameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootballMemoryGameViewModel.swift; sourceTree = "<group>"; };
+		D0D6E99B26F340DC0001C849 /* Teams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Teams.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				D0A64DDC26E9FA3F00C92AE5 /* MemoryGameModel.swift */,
+				D0D6E99B26F340DC0001C849 /* Teams.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -205,6 +208,7 @@
 				D0A64DDF26E9FB6C00C92AE5 /* EmojiGameViewModel.swift in Sources */,
 				D0C4A63C26F274430060A39A /* AspectVGrid.swift in Sources */,
 				D058C6D526D8ED9F00E4C15F /* EmojiMemoryGameView.swift in Sources */,
+				D0D6E99C26F340DC0001C849 /* Teams.swift in Sources */,
 				D0AF5CCD26E0C4F80005FECE /* CardView.swift in Sources */,
 				D058C6D326D8ED9F00E4C15F /* Memory_CardsApp.swift in Sources */,
 				D0D6E99026F3353A0001C849 /* GameListview.swift in Sources */,

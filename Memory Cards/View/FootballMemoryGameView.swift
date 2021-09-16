@@ -28,6 +28,9 @@ struct FootballMemoryGameView: View {
         }, label: {
             Text("Restart")
         }))
+        .onAppear {
+            viewModel.loadData()
+        }
     }
     
     @ViewBuilder // <-- pay attention to this declaration. It explains to compile that this function is also a ViewBuilder
